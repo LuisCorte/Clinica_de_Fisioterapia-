@@ -1,10 +1,13 @@
-# 🏥 FISIOTECH+ | Sistema Web para Clínica de Fisioterapia
+# 🏥 FISIOTECH+ | Sitio Web para Clínica de Fisioterapia
 
+[![Live Demo](https://img.shields.io/badge/Demo%20en%20Vivo-Netlify-00C7B7?style=for-the-badge&logo=netlify)](https://fitlibenclinicafisioterapia.netlify.app/)
 [![INDAUTOR Registered](https://img.shields.io/badge/Registro-INDAUTOR-blue.svg)](#-propiedad-intelectual-e-investigación)
 [![Academia Journals](https://img.shields.io/badge/Congreso-Academia%20Journals-green.svg)](#-propiedad-intelectual-e-investigación)
 [![Stripe Integrated](https://img.shields.io/badge/Pagos-Stripe-purple.svg)](#-tecnologías-utilizadas)
 
 **FISIOTECH+** es una plataforma web integral desarrollada colaborativamente para clínicas de fisioterapia. Está diseñada para optimizar la gestión de servicios de rehabilitación, facilitar el agendamiento y ofrecer un procesamiento seguro de pagos en línea para los pacientes.
+
+🌐 **Demo en vivo:** [fitlibenclinicafisioterapia.netlify.app](https://fitlibenclinicafisioterapia.netlify.app/)
 
 ---
 
@@ -29,6 +32,7 @@
 * **Frontend:** HTML5, CSS3, JavaScript (ES6+)
 * **Framework CSS:** Bootstrap
 * **Integración de Pagos:** Stripe JavaScript SDK / API
+* **Despliegue & Hosting:** Netlify
 * **Control de Versiones:** Git & GitHub
 
 ---
