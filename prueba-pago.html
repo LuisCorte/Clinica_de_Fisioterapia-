@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            box-sizing: border-box;
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+
+        .apartado {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .apartado>* {
+            flex: 1 1 200px;
+            margin: 1rem;
+        }
+
+        .apartado {
+            background-color: aqua;
+            color: black;
+            font-size: 120%;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease-out;
+        }
+
+        .apartado:hover {
+            opacity: .9;
+            transform: scale(.9);
+        }
+
+        .apartado img {
+            max-width: 10%;
+            height: auto;
+        }
+
+        .apartado figcaption {
+            padding: 1rem;
+        }
+
+        /*Botón restablecer*/
+        .button {
+            display: inline-block;
+            padding: 9px 12px;
+            font-size: 17px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 7px #999;
+        }
+
+        .button:hover {
+            background-color: #3e8e41
+        }
+
+        .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+        /*Botón enviar*/
+        .button1 {
+            display: inline-block;
+            padding: 9px 12px;
+            font-size: 17px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #22a8d9;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 7px #999;
+        }
+
+        .button1:hover {
+            background-color: #0489B1
+        }
+
+        .button1::backdrop {
+            background-color: #22a8d9;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+        /*Fondo*/
+        body {
+            background-image: url(https://www.hamiltonscompounding.com.au/wp-content/uploads/green-to-blue-gradient.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        form {
+            background-color: rgb(248, 243, 236);
+            height: auto;
+            width: max-content;
+        }
+
+        /*Prueba para mostrar los div de consulta y tratamiento*/
+    </style>
+
+    <scriptsrc="https: //ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js">
+        <script language="Javascript">
+            function mostrar() {
+                resultado1 = "ninguna";
+                for (contador = 0; contador < formulario.grupo1.length; contador++) {
+                    if (formulario.grupo1[contador].checked) {
+                        resultado1 = String.fromCharCode(contador + 65);
+                    }
+                }
+                if (resultado1 == 'A') {
+                    $('#txtcolsulta').hide()
+                } else if (resultado1 == 'B') {
+
+                }
+            }
+        </script>
+        </script>
+
+</head>
+
+<body>
+    <h1>Agendar cita</h1>
+    <section id="apartado" class="apartado"></section>
+    <template id="apartado-template">
+        <figure class="apartado">
+            <img src="" alt="">
+            <figcaption></figcaption>
+        </figure>
+    </template>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="stripe-checkout.js" type="module"></script>
+
+    <center>
+        <form>
+            <h1>FORMULARIO DE CITA</h1>
+            <br />
+            <table cols="2">
+
+                <tr>
+                    <td width="113" height="29" align="left"><label>Nombre</label><br /></td>
+                    <td width="246"><input title="nombre" name="Nombre" type="text" size="40" required /></td>
+                </tr>
+                <tr>
+                    <td height="29" align="left"><label>Edad</label></td>
+                    <td><input title="edad" name="Edad" type="text" size="4" required /> años</td>
+                </tr>
+                <tr>
+                    <td height="28" align="left"><label>Dirección</label></td>
+                    <td><input title="direccion" name="Direccion" type="text" size="40" required /></td>
+                </tr>
+                <tr>
+                    <td height="29" align="left"><label>Celular</label></td>
+                    <td><input title="telefono" name="Teléfono" type="tel" required /></td>
+                </tr>
+                <tr>
+                    <td height="54" align="left"><label>Tipo de cita</label></td>
+                    <td>
+                        <p>
+                            <label><input type="radio" name="grupo1" value="A" id="Consulta_0" />Consulta</label>
+                        <div hidden="true"><br /><br />
+                            <label> Asunto:
+                                <textarea id="txtcolsulta" title="consulta" name="consulta" maxlength="100" cols="40"
+                                    rows="7"></textarea><br />
+                        </div>
+                        <label><input type="radio" name="grupo1" value="B" id="Consulta_1" />Tratamiento</label>
+                        <div hidden="true"><br /><br /><select title="tratamientos" align="left" name="tratamientos">
+                                <option value="0">Seleccione una opción</option>
+                                <option value="1">Fisioterapia traumatologíca</option>
+                                <option value="2">Fisioterapia deportiva</option>
+                                <option value="3">Fisioterapia reumatologíca</option>
+                                <option value="4">Fisioterapia neurológica</option>
+                                <option value="5">Fisioterapia geriátrica</option>
+                                <option value="6">Fisioterapia uroginecológica</option>
+                                <option value="7">Fisioterapia veterinaria</option>
+                                <option value="8">Fisioterapia ergonomíca</option>
+                                <option value="9">Fisioterapia estética</option>
+                            </select></div>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="74" align="left"><label>Comorbilidades</label></td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label>
+                                        <input type="checkbox" name="Comorbilidades" value="casilla de verificación "
+                                            id="Comorbilidades_0" />Diabetes</label>
+                                    <br />
+                                    <label>
+                                        <input type="checkbox" name="Comorbilidades" value="casilla de verificación "
+                                            id="Comorbilidades_1" />Hipertensión</label>
+                                    <br />
+                                    <label>
+                                        <input type="checkbox" name="Comorbilidades" value="casilla de verificación "
+                                            id="Comorbilidades_2" />Asma</label>
+                                    <br />
+                                    <label>
+                                        <input type="checkbox" name="Comorbilidades" value="casilla de verificación "
+                                            id="Comorbilidades_3" />Artrosis</label>
+                                </td>
+                                <td>
+                                    <label>
+                                        <input type="checkbox" name="Comorbilidades" value="casilla de verificación "
+                                            id="Comorbilidades_4" />Artritis</label>
+                                    <br />
+                                    <label>
+                                        <input type="checkbox" name="Comorbilidades" value="casilla de verificación "
+                                            id="Comorbilidades_5" />Parkinson</label>
+                                    <br />
+                                    <label>
+                                        <input type="checkbox" name="Comorbilidades" value="casilla de verificación "
+                                            id="Comorbilidades_6" />Esclerosis múltiple</label>
+                                    <br />
+                                    <label>
+                                        <input type="checkbox" name="Comorbilidades" value="casilla de verificación "
+                                            id="Comorbilidades_7" />Alzheimer</label>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="34" align="left">Fecha</td>
+                    <td><input title="fecha" type="date" name="fecha"></td>
+                </tr>
+                <tr>
+                    <td height="30" align="left">Horario</td>
+                    <td><select title="horario" name="horario">
+                            <option value="1">8:00 a.m. - 9:00 a.m.</option>
+                            <option value="2">9:00 a.m. - 10:00 a.m.</option>
+                            <option value="3">10:00 a.m. - 11:00 a.m.</option>
+                            <option value="4">11:00 a.m. - 12:00 p.m.</option>
+                            <option value="5">12:00 p.m. - 1:00 p.m.</option>
+                            <option value="6">1:00 p.m. - 2:00 p.m.</option>
+                            <option value="7">2:00 p.m. - 3:00 p.m.</option>
+                            <option value="8">3:00 p.m. - 4:00 p.m.</option>
+                            <option value="9">4:00 p.m. - 5:00 p.m.</option>
+                            <option value="10">6:00 p.m. - 7:00 p.m.</option>
+                        </select></td>
+                </tr>
+            </table><br /><br />
+            <button name="Restablecer" type="reset" value="Restablecer" class="button">Restablecer</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="button1" name="Enviar" type="submit" value="Enviar">Enviar</button>
+            <br /><br /><br />
+        </form>
+    </center>
+
+
+</body>
+
+</html>

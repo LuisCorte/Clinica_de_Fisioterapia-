@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fitliben Clínica Fisioterapia & Fitness</title>
+    <link rel="stylesheet" href="estilos.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway:500,600&display=swap" rel="stylesheet">
+    <!--Materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- CSS Estilos -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/Logo.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script>
+        var writing = str => {
+            let arrFromStr = str.split('');
+            let i = 0;
+            let printStr = setInterval(function () {
+                document.body.innerHTML += arrFromStr[i];
+                i++;
+                if (i === arrFromStr.length - 1) {
+                    clearInterval(printStr);
+                }
+            }, 500);
+
+        };
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="">
+                <div class="logo">
+                    <img src="img/Logo.jpeg" alt="Fitliben Logo">
+                </div>
+            </a>
+            <div class="icono" id="icono">
+                <span>&#9776;</span>
+            </div>
+            <div class="enlaces uno" id="enlaces">
+                <a href="#">¿Quiénes somos?</a>
+                <a href="prueba-pago.html">Agendar cita</a>
+                <a href="#Galeria">Galer&iacute;a</a>
+                <a href="#Contacto">Contacto</a>
+            </div>
+        </nav>
+    </header>
+    <!-- ENCABEZADO -->
+    <div class="textosCuerpo">
+        <center>
+            <div id="imgSomos">
+                <br> <br> <br> <br>
+                <div class="efectoEscribir">
+                    <h1>Somos un equipo del área de la medicina cuya especialidad es la Fisioterapia y la Rehabilitación
+                        , atendemos diversos padecimientos fisiopatológicos.<span>&nbsp;</span></h1>
+                </div>
+            </div>
+        </center>
+        <h2></h2>
+    </div>
+    <!-- CERTIFICADOS -->
+    <br>
+    <center>
+        <h4 style="text-decoration: overline">Certificados en</h4>
+    </center>
+    <div class="certificados">
+        <img src="img/1.jpeg" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+        <img src="img/2.jpeg" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+        <img src="img/3.jpeg" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+    </div>
+
+
+    <!-- SERVICIOS 
+    <div class="tituloServicios">
+        <h4>Contamos con áreas de Fisioterapia en:</h4>
+    </div>
+    -->
+    <br><br>
+    <div class="containerFluid">
+        <div class="accordion" data-aos="fade-up">
+            <div class="icon"></div>
+            <h4>Fisioterapia</h4>
+        </div>
+        <div class="panel">
+            <div class="serv1">
+                <ul>
+                    <li>Respiratoria</li>
+                    <li>Muscoesquelética</li>
+                    <li>Deportiva</li>
+                    <li>Traumatología y ortopedia</li>
+                </ul>
+            </div>
+            <div class="serv2">
+                <ul>
+                    <li>Neurológica</li>
+                    <li>Pediátrica</li>
+                    <li>Estimulación temprana</li>
+                    <li>Obstétrica (embarazadas)</li>
+                </ul>
+            </div>
+            <div class="serv3">
+                <ul>
+                    <li>Cardio respiratoria</li>
+                    <li>Geriátrica (tercer edad)</li>
+                    <li>Estética (disminución de tallas y peso)</li>
+                    <li>Fisioterapia</li>
+                </ul>
+            </div>
+            <div class="serv4">
+                <ul>
+                    <li>Quiropraxia</li>
+                    <li>Biomagnetismo</li>
+                    <li>Masajes relajantes</li>
+                    <li>Masaje terapeútico</li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="accordion" data-aos="fade-up">
+            <div class="icon"></div>
+            <h4>Equipo</h4>
+        </div>
+        <div class="panel">
+            <div class="serv1">
+                <ul>
+                    <li>Electroterapia</li>
+                    <li>Laserterapia</li>
+                </ul>
+            </div>
+            <div class="serv2">
+                <ul>
+                    <li>Magnetoterapia</li>
+                    <li>Mecanoterapia</li>
+                </ul>
+            </div>
+            <div class="serv3">
+                <ul>
+                    <li>Parafina</li>
+                    <li>Acupuntura</li>
+                </ul>
+            </div>
+            <div class="serv4">
+                <ul>
+                    <li>Cavitación y Radiofrecuencia</li>
+                    <li>Quiropraxia</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="accordion" data-aos="fade-up">
+            <div class="icon"></div>
+            <h4>Padecimientos</h4>
+        </div>
+        <div class="panel">
+            <div class="serv1">
+                <ul>
+                    <li>Cervicalgias</li>
+                    <li>Dorsalgias</li>
+                    <li>Lumbalgias</li>
+                </ul>
+            </div>
+            <div class="serv2">
+                <ul>
+                    <li>Parálisis Facial</li>
+                    <li>Fracturas</li>
+                    <li>Desgarres</li>
+                </ul>
+            </div>
+            <div class="serv3">
+                <ul>
+                    <li>Esguinces</li>
+                    <li>Intervenciones quirúrgicas</li>
+                    <li>Lesiones Nerviosas</li>
+                </ul>
+            </div>
+            <div class="serv4">
+                <ul>
+                    <li>Síndrome del Túnel del carpo</li>
+                    <li>Artitis Reumatoide</li>
+                    <li>Secuelas de EVC</li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- BORRAR AFTER
+    <div class="serviciosOfrece">
+        <div class="serv1">
+            <ul>
+                <li>Respiratoria</li>
+                <li>Muscoesquelética</li>
+                <li>Deportiva</li>
+                <li>Traumatología y ortopedia</li>
+            </ul>
+        </div>
+        <div class="serv2">
+            <ul>
+                <li>Neurológica</li>
+                <li>Pediátrica</li>
+                <li>Estimulación temprana</li>
+                <li>Obstétrica (embarazadas)</li>
+            </ul>
+        </div>
+        <div class="serv3">
+            <ul>
+                <li>Cardio respiratoria</li>
+                <li>Geriátrica (tercer edad)</li>
+                <li>Estética (disminución de tallas y peso)</li>
+                <li>Fisioterapia</li>
+            </ul>
+        </div>
+        <div class="serv4">
+            <ul>
+                <li>Quiropraxia</li>
+                <li>Biomagnetismo</li>
+                <li>Masajes relajantes</li>
+                <li>Masaje terapeútico</li>
+            </ul>
+
+        </div>
+    </div>
+    BORRAR AFTER-->
+
+
+
+    <!-- TESTIMONIOS -->
+    <center>
+        <br> <br>
+        <strong>
+            <h4 style="text-decoration: overline" data-aos="flip-down">Nuestros testimonios</h4>
+        </strong>
+        <div class="testimonios">
+
+            <div class="tarjeta">
+                <figure>
+                    <img src="img/t1.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h5>⭐⭐⭐⭐⭐</h5>
+                    <h3>David, T.</h3>
+                    <p>"Los mejores profesionales y especialistas en materia de Rehabilitación Física altamente,
+                        capacitados y éticos."</p>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <figure>
+                    <img src="img/t2.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h5>⭐⭐⭐⭐⭐</h5>
+                    <h3>Lulu, M.</h3>
+                    <p>"Excelente calidad de servicio los terapeutas muy amables. Explican muy bien el padecimiento. Quitan totalmente el dólor."</p>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <figure>
+                    <img src="img/t3.jpg" alt="">
+                </figure>
+                <div class="contenido">
+                    <h5>⭐⭐⭐⭐⭐</h5>
+                    <h3>Pedro, A.</h3>
+                    <p>"Excelente atención de los fisioterapeutas y muy preparados. Gracias!"</p>
+                </div>
+            </div>
+        </div>
+        <a href="https://www.google.com.mx/search?q=fitliben&sxsrf=ALiCzsZD7WlYrS5E0mICYq2iHK_lcKUtCg%3A1665286876709&source=hp&ei=3EJCY9nQJb3dkPIP__26uAU&iflsig=AJiK0e8AAAAAY0JQ7GcIQJ7XqvrKne1Kdyb7cox9boq9&oq=fit&gs_lcp=Cgdnd3Mtd2l6EAMYADIECCMQJzIECCMQJzIICAAQgAQQsQMyCAgAEIAEELEDMggIABCABBCxAzIICAAQgAQQsQMyCAgAEIAEELEDMggIABCABBCxAzIICAAQgAQQsQMyDgguEIAEELEDEMcBENEDOgsIABCABBCxAxCDAToLCC4QgAQQsQMQgwE6BQgAEIAEOhEILhCABBCxAxCDARDHARDRAzoICC4QsQMQgwE6EAguEIAEEIcCEMcBEK8BEBQ6CAgAELEDEIMBUABYlQJgugpoAHAAeACAAYgBiAHaApIBAzEuMpgBAKABAQ&sclient=gws-wiz#"
+            style="color: #4192a6;" target="_blank">Ver todos los testimonios -></a>
+    </center>
+
+    <!--Carousel-->
+    <center>
+        <br> <br>
+        <div class="galeria" id="Galeria"></div>
+        <br>
+        <h4 style="text-decoration: overline" data-aos="flip-up">Galer&iacute;a</h4>
+
+        <div class="carousel">
+            <div class="carousel carousel-item">
+                <img src="img/a.jpg" alt="">
+            </div>
+            <div class="carousel carousel-item">
+                <img src="img/b.jpg" alt="">
+            </div>
+            <div class="carousel carousel-item">
+                <img src="img/Logo.jpeg" alt="">
+            </div>
+            <div class="carousel carousel-item">
+                <img src="img/t1.jpg" alt="">
+            </div>
+            <div class="carousel carousel-item">
+                <img src="img/t2.jpg" alt="">
+            </div>
+            <div class="carousel carousel-item">
+                <img src="img/t4.jpg" alt="">
+            </div>
+            <div class="carousel carousel-item">
+                <img src="img/t5.jpg" alt="">
+            </div>
+            <div class="carousel carousel-item">
+                <img src="img/t6.jpg" alt="">
+            </div>
+        </div>
+        </div>
+    </center>
+
+    <!-- CONTACTO -->
+    <h2>
+        <center>
+            <div id="Contacto">
+                <strong>
+                    <h4 data-aos="flip-left">¡Contáctanos!</h4>
+                </strong>
+        </center>
+        </div>
+    </h2>
+    <div class="row align-items-center">
+        <div class="col">
+            <center>
+                <table id="tablaHorario">
+                    <h5>Horarios de atenci&oacute;n</h5>
+                    <tr>
+                        <td>
+                            <p>lun:</p>
+                        </td>
+                        <td>
+                            <p>8:00–20:30</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>mar:</p>
+                        </td>
+                        <td>
+                            <p>8:00–20:30</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>mié:</p>
+                        </td>
+                        <td>
+                            <p>8:00–20:30</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>jue:</p>
+                        </td>
+                        <td>
+                            <p>8:00–20:30</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>vie:</p>
+                        </td>
+                        <td>
+                            <p>8:00–20:30</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>sáb:</p>
+                        </td>
+                        <td>
+                            <p>9:00–14:00</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>dom:</p>
+                        </td>
+                        <td>
+                            <p>9:00–13:20</p>
+                        </td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+
+        <div class="col">
+            <center>
+                <h5>Dirección</h5>
+                <br>
+                <p> Calle 3 Norte 3610, Hidalgo, 72080 Puebla, Pue. </p>
+                <br </center>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.1121136278225!2d-98.1919944!3d19.058807700000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc11c70682ddb%3A0x9157239a695c67d7!2sFITLIBEN%20FISIOTERAPIA!5e0!3m2!1ses-419!2smx!4v1664655153372!5m2!1ses-419!2smx"
+                    width="100%" height="300" style="border: 40px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </div>
+
+
+    <!--REDES SOCIALES-->
+    <br>
+    <div class="sociales">
+        <section class="buttons">
+            <a href="https://www.facebook.com/FITLIBEN" class="fa fa-facebook" target="_blank"></a>
+            <a href="https://api.whatsapp.com/send?phone=2224567629&text=¡Hola! ¿Tienes alguna pregunta? Envíame un mensaje directo "
+                class="fa fa-whatsapp" target="_blank"></a>
+            <a href="https://www.instagram.com/fitlibenfisio?r=nametag" class="fa fa-instagram" target="_blank"></a>
+        </section>
+    </div>
+    <footer>
+        <div class="pie">
+            Copyright 2022. Instituto Tecnológico de Puebla
+            <br>
+        </div>
+    </footer>
+
+    <!--Materialize.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- JS Main -->
+    <script src="js/main.js"></script>
+    <script src="js/main1.js"></script>
+
+    <!-- scroll smooth -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 500
+        });
+    </script>
+</body>
+
+</html>
